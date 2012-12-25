@@ -1,0 +1,4 @@
+*.py[oc]
+*.*project*
+lesson5/pinkiepie/migrations/
+*.~*
