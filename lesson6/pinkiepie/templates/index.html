@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block titile %}Pie list{% endblock %}
+
+{% block content %}
+<a href="{% url Order %}">Order pie</a>
+<a href="{% url IWannaPie %}">I wanna pie</a>
+
+<ul class="unstyled">
+    {% for pie in pie_list %}
+        <li>{{ pie.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
